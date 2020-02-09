@@ -36,4 +36,11 @@ public class FighterJet extends Jet implements CombatReady{
 		
 	}
 
+	@Override
+	public void fight() {
+		System.out.println(this.getModel() + ": Popping flares, doing turns, staring at the sun. OMG I'M LOST!");
+		// TODO Auto-generated method stub
+		
+	}
+
 }

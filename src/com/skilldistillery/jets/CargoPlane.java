@@ -28,7 +28,7 @@ public class CargoPlane extends Jet implements CargoCarrier{
 
 	@Override
 	public String toString() {
-		return "CargoPlane [cargoCapacity=" + cargoCapacity + ", toString()=" + super.toString() + "]";
+		return "CargoPlane " + "[toString()=" + super.toString() + "]" + " [cargoCapacity=" + cargoCapacity;
 	}
 
 
@@ -62,6 +62,12 @@ public class CargoPlane extends Jet implements CargoCarrier{
 		System.out.println("I'm loud but can carry a lot of cargo!");
 		// TODO Auto-generated method stub
 		
+	}
+
+
+	@Override
+	public void loadCargo() {
+		System.out.println(this.getModel() + ": Cargo jet is now loading cargo.");
 	}
 
 }

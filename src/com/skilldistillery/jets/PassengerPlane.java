@@ -1,15 +1,15 @@
 package com.skilldistillery.jets;
 
-public class JetImpl extends Jet{
+public class PassengerPlane extends Jet{
 	private double passengerCapacity;
 
-	public JetImpl(String model, double speed, double range, double price) {
+	public PassengerPlane(String model, double speed, double range, double price) {
 		super(model, speed, range, price);
 		// TODO Auto-generated constructor stub
 	}
 	
 
-	public JetImpl(String model, double speed, double range, double price, double passengerCapacity) {
+	public PassengerPlane(String model, double speed, double range, double price, double passengerCapacity) {
 		super(model, speed, range, price);
 		this.passengerCapacity = passengerCapacity;
 	}
@@ -52,7 +52,7 @@ public class JetImpl extends Jet{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		JetImpl other = (JetImpl) obj;
+		PassengerPlane other = (PassengerPlane) obj;
 		if (Double.doubleToLongBits(passengerCapacity) != Double.doubleToLongBits(other.passengerCapacity))
 			return false;
 		return true;
@@ -61,7 +61,7 @@ public class JetImpl extends Jet{
 
 	@Override
 	public String toString() {
-		return "JetImpl [passengerCapacity=" + passengerCapacity + ", toString()=" + super.toString() + "]";
+		return "JetImpl" + " [toString()=" + super.toString() + "]" + " [passengerCapacity=" + passengerCapacity;
 	}
 	
 
