@@ -8,12 +8,6 @@ public class JetsApplication {
 		Scanner keyboard = new Scanner(System.in);
 		// TODO Auto-generated method stub
 		AirField airFieldTest = new AirField();
-//		airFieldTest.buildAirField();
-//		airFieldTest.printJets();
-//		airFieldTest.flyJets();
-//		airFieldTest.addJetMenu(keyboard);
-//		airFieldTest.printJets();
-//		airFieldTest.addJetMenu();
 		JetsApplication runJetApplication = new JetsApplication();
 		runJetApplication.menuOptions(keyboard, airFieldTest);
 

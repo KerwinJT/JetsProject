@@ -184,8 +184,8 @@ public class AirField {
 			moreJets.add(new PassengerPlane(model, speed, range, price, passenger));
 		} else {
 			System.out.println("Error during input found. Jet not added.");
+			System.out.print("Please press 'enter' to continue.");
 		}
-		System.out.print("Please press 'enter' to continue.");
 		keyboard.nextLine();
 
 	}
@@ -238,8 +238,8 @@ public class AirField {
 			moreJets.add(new CargoPlane(model, speed, range, price, cargoCapacity));
 		} else {
 			System.out.println("Jet not added.");
+			System.out.print("Please press 'enter' to continue.");
 		}
-		System.out.print("Please press 'enter' to continue.");
 		keyboard.nextLine();
 	}
 
