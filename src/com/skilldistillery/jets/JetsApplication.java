@@ -73,16 +73,15 @@ public class JetsApplication {
 			case 9: {
 				menuContinue = false;
 				break;
-				
+
 			}
 			default: {
 				System.out.println("Invalid selection.");
 			}
 			}
 		}
-		
-		
-		
+		System.out.println("\tThank you for using the automated AirField Application.".toUpperCase());
+
 	}
 
 }

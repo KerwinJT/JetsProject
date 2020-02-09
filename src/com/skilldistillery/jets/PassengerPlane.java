@@ -61,7 +61,7 @@ public class PassengerPlane extends Jet{
 
 	@Override
 	public String toString() {
-		return "JetImpl" + " [toString()=" + super.toString() + "]" + " [passengerCapacity=" + passengerCapacity;
+		return "PassengerPlane" + " [toString()=" + super.toString() + "]" + " [passengerCapacity=" + passengerCapacity;
 	}
 	
 

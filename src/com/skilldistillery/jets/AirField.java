@@ -98,7 +98,6 @@ public class AirField {
 		Double speed = null;
 		Double range = null;
 		Double price = null;
-		
 
 		System.out.print("Model: ");
 		model = keyboard.nextLine();
@@ -110,7 +109,7 @@ public class AirField {
 			System.out.println("Input Error.");
 			keyboard.nextLine();
 		}
-		
+
 		System.out.print("Range: ");
 		try {
 			range = keyboard.nextDouble();
@@ -119,7 +118,7 @@ public class AirField {
 			System.out.println("Input Error.");
 			keyboard.nextLine();
 		}
-		
+
 		System.out.print("Unit Price: ");
 		try {
 			price = keyboard.nextDouble();
@@ -127,6 +126,7 @@ public class AirField {
 		} catch (InputMismatchException e) {
 			System.out.println("Input Error.");
 			keyboard.nextLine();
+			System.out.print("Please press 'enter' to continue.");
 		}
 		keyboard.nextLine();
 		
@@ -182,7 +182,10 @@ public class AirField {
 		}
 		if (speed != null && range != null && range != null) {
 			moreJets.add(new PassengerPlane(model, speed, range, price, passenger));
-		} else System.out.println("Error during input found. Jet not added.");
+		} else {
+			System.out.println("Error during input found. Jet not added.");
+		}
+		System.out.print("Please press 'enter' to continue.");
 		keyboard.nextLine();
 
 	}
@@ -224,7 +227,7 @@ public class AirField {
 			System.out.println("Input Error.");
 			keyboard.nextLine();
 		}
-		System.out.print("Passenger capacity: ");
+		System.out.print("Cargo capacity: ");
 		try {
 			cargoCapacity = keyboard.nextDouble();
 		} catch (InputMismatchException e) {
@@ -233,7 +236,10 @@ public class AirField {
 		}
 		if (speed != null && range != null && range != null) {
 			moreJets.add(new CargoPlane(model, speed, range, price, cargoCapacity));
-		} else System.out.println("Jet not added.");
+		} else {
+			System.out.println("Jet not added.");
+		}
+		System.out.print("Please press 'enter' to continue.");
 		keyboard.nextLine();
 	}
 
