@@ -56,6 +56,7 @@ public class AirField {
 	public void flyJets() { //Fly all jets
 		for (Jet jet : moreJets) {
 			jet.fly();
+			System.out.println("Aricraft " + jet.getModel()+ " can fly " + (jet.getRange()/jet.getSpeed()) + " hours before running out of fuel.");
 		}
 	}
 
